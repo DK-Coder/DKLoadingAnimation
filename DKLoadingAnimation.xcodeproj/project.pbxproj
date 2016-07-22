@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD139ADE1D41ED1100C7E349 /* DKAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD139ADD1D41ED1100C7E349 /* DKAnimationView.m */; };
+		BD139AE11D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD139AE01D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.m */; };
+		BD68453D1D41B82F0040385D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68453C1D41B82F0040385D /* main.m */; };
+		BD6845401D41B82F0040385D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68453F1D41B82F0040385D /* AppDelegate.m */; };
+		BD6845431D41B82F0040385D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6845421D41B82F0040385D /* ViewController.m */; };
+		BD6845461D41B82F0040385D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6845441D41B82F0040385D /* Main.storyboard */; };
+		BD6845481D41B82F0040385D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6845471D41B82F0040385D /* Assets.xcassets */; };
+		BD68454B1D41B82F0040385D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6845491D41B82F0040385D /* LaunchScreen.storyboard */; };
+		BD6845581D41B8C10040385D /* DKThreeDotLoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6845571D41B8C10040385D /* DKThreeDotLoadingAnimationView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD139ADC1D41ED1100C7E349 /* DKAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKAnimationView.h; sourceTree = "<group>"; };
+		BD139ADD1D41ED1100C7E349 /* DKAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKAnimationView.m; sourceTree = "<group>"; };
+		BD139ADF1D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTenDotCircleLoadingAnimationView.h; sourceTree = "<group>"; };
+		BD139AE01D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTenDotCircleLoadingAnimationView.m; sourceTree = "<group>"; };
+		BD6845381D41B82F0040385D /* DKLoadingAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKLoadingAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD68453C1D41B82F0040385D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD68453E1D41B82F0040385D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BD68453F1D41B82F0040385D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BD6845411D41B82F0040385D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BD6845421D41B82F0040385D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BD6845451D41B82F0040385D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD6845471D41B82F0040385D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD68454A1D41B82F0040385D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD68454C1D41B82F0040385D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD6845561D41B8C10040385D /* DKThreeDotLoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKThreeDotLoadingAnimationView.h; sourceTree = "<group>"; };
+		BD6845571D41B8C10040385D /* DKThreeDotLoadingAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKThreeDotLoadingAnimationView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD6845351D41B82F0040385D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD68452F1D41B82F0040385D = {
+			isa = PBXGroup;
+			children = (
+				BD68453A1D41B82F0040385D /* DKLoadingAnimation */,
+				BD6845391D41B82F0040385D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD6845391D41B82F0040385D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD6845381D41B82F0040385D /* DKLoadingAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD68453A1D41B82F0040385D /* DKLoadingAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				BD6845521D41B8560040385D /* DKLoadingAnimation */,
+				BD68453E1D41B82F0040385D /* AppDelegate.h */,
+				BD68453F1D41B82F0040385D /* AppDelegate.m */,
+				BD6845411D41B82F0040385D /* ViewController.h */,
+				BD6845421D41B82F0040385D /* ViewController.m */,
+				BD6845441D41B82F0040385D /* Main.storyboard */,
+				BD6845471D41B82F0040385D /* Assets.xcassets */,
+				BD6845491D41B82F0040385D /* LaunchScreen.storyboard */,
+				BD68454C1D41B82F0040385D /* Info.plist */,
+				BD68453B1D41B82F0040385D /* Supporting Files */,
+			);
+			path = DKLoadingAnimation;
+			sourceTree = "<group>";
+		};
+		BD68453B1D41B82F0040385D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD68453C1D41B82F0040385D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD6845521D41B8560040385D /* DKLoadingAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				BD139ADC1D41ED1100C7E349 /* DKAnimationView.h */,
+				BD139ADD1D41ED1100C7E349 /* DKAnimationView.m */,
+				BD6845561D41B8C10040385D /* DKThreeDotLoadingAnimationView.h */,
+				BD6845571D41B8C10040385D /* DKThreeDotLoadingAnimationView.m */,
+				BD139ADF1D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.h */,
+				BD139AE01D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.m */,
+			);
+			path = DKLoadingAnimation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD6845371D41B82F0040385D /* DKLoadingAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD68454F1D41B82F0040385D /* Build configuration list for PBXNativeTarget "DKLoadingAnimation" */;
+			buildPhases = (
+				BD6845341D41B82F0040385D /* Sources */,
+				BD6845351D41B82F0040385D /* Frameworks */,
+				BD6845361D41B82F0040385D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DKLoadingAnimation;
+			productName = DKLoadingAnimation;
+			productReference = BD6845381D41B82F0040385D /* DKLoadingAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD6845301D41B82F0040385D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "dk-coder";
+				TargetAttributes = {
+					BD6845371D41B82F0040385D = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = BD6845331D41B82F0040385D /* Build configuration list for PBXProject "DKLoadingAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD68452F1D41B82F0040385D;
+			productRefGroup = BD6845391D41B82F0040385D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD6845371D41B82F0040385D /* DKLoadingAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD6845361D41B82F0040385D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD68454B1D41B82F0040385D /* LaunchScreen.storyboard in Resources */,
+				BD6845481D41B82F0040385D /* Assets.xcassets in Resources */,
+				BD6845461D41B82F0040385D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD6845341D41B82F0040385D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6845581D41B8C10040385D /* DKThreeDotLoadingAnimationView.m in Sources */,
+				BD6845431D41B82F0040385D /* ViewController.m in Sources */,
+				BD139ADE1D41ED1100C7E349 /* DKAnimationView.m in Sources */,
+				BD6845401D41B82F0040385D /* AppDelegate.m in Sources */,
+				BD68453D1D41B82F0040385D /* main.m in Sources */,
+				BD139AE11D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD6845441D41B82F0040385D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD6845451D41B82F0040385D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD6845491D41B82F0040385D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD68454A1D41B82F0040385D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD68454D1D41B82F0040385D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BD68454E1D41B82F0040385D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD6845501D41B82F0040385D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DKLoadingAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dk-coder.DKLoadingAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD6845511D41B82F0040385D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DKLoadingAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dk-coder.DKLoadingAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD6845331D41B82F0040385D /* Build configuration list for PBXProject "DKLoadingAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD68454D1D41B82F0040385D /* Debug */,
+				BD68454E1D41B82F0040385D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD68454F1D41B82F0040385D /* Build configuration list for PBXNativeTarget "DKLoadingAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD6845501D41B82F0040385D /* Debug */,
+				BD6845511D41B82F0040385D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD6845301D41B82F0040385D /* Project object */;
+}
