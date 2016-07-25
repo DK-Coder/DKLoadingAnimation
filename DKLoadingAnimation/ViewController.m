@@ -10,8 +10,10 @@
 #import "DKThreeDotLoadingAnimationView.h"
 #import "DKTenDotCircleLoadingAnimationView.h"
 
-@interface ViewController ()
-
+@interface ViewController()
+{
+    NSArray *arrayLoadingAnimations;
+}
 @end
 
 @implementation ViewController
@@ -21,22 +23,17 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0.f, 100.f, self.view.frame.size.width, 60.f)];
-    [btn setBackgroundColor:[UIColor orangeColor]];
-    [btn setTitle:@"loading遮挡测试" forState:UIControlStateNormal];
-    [btn setShowsTouchWhenHighlighted:YES];
-    [self.view addSubview:btn];
-    
-    CGRect frame = CGRectMake(0.f, 0.f, self.view.frame.size.width, self.view.frame.size.height);
 //    DKThreeDotLoadingAnimationView *loading = [[DKThreeDotLoadingAnimationView alloc] init];
-//    loading.frame = frame;
+//    loading.frame = self.view.frame;
 //    [self.view addSubview:loading];
-//    [loading showWithComplete:nil];
+//    [loading showLoading];
     
-    DKTenDotCircleLoadingAnimationView *loading2 = [[DKTenDotCircleLoadingAnimationView alloc] init];
-    loading2.frame = frame;
-    [self.view addSubview:loading2];
-    [loading2 showWithComplete:nil];
+//    DKTenDotCircleLoadingAnimationView *loading2 = [[DKTenDotCircleLoadingAnimationView alloc] init];
+//    loading2.frame = self.view.frame;
+//    [self.view addSubview:loading2];
+//    [loading2 showLoading];
+    [self initAllData];
+    [self initAllControls];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,4 +41,53 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
+- (void)initAllData
+{
+    arrayLoadingAnimations = @[@"DKThreeDotLoadingAnimationView", @"DKTenDotCircleLoadingAnimationView"];
+}
+
+- (void)initAllControls
+{
+    UITableView *tableDemo = [[UITableView alloc] initWithFrame:self.view.frame];
+    tableDemo.delegate = self;
+    tableDemo.dataSource = self;
+    tableDemo.rowHeight = 50.f;
+    tableDemo.tableFooterView = [UIView new];
+    [self.view addSubview:tableDemo];
+    [tableDemo registerClass:[UITableViewCell class] forCellReuseIdentifier:@"defaultCell"];
+}
+
+#pragma UITableDatasource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return arrayLoadingAnimations.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"defaultCell"];
+    cell.textLabel.text = arrayLoadingAnimations[indexPath.row];
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    cell.textLabel.font = [UIFont systemFontOfSize:16.f];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Class className = NSClassFromString(arrayLoadingAnimations[indexPath.row]);
+    DKAnimationView *loadingAnimation = [className new];
+//    loadingAnimation.dotColor = [UIColor colorWithRed:arc4random_uniform(256) / 255.f green:arc4random_uniform(256) / 255.f blue:arc4random_uniform(256) / 255.f alpha:1.f];
+    [loadingAnimation showLoadingInView:self.view];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [loadingAnimation hideLoading];
+    });
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 @end

@@ -8,22 +8,34 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, DKAnimationType) {
-    DKAnimationTypeFadeIn = 0
-};
+#define DKSCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define DKSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 @protocol DKAnimationDelegate <NSObject>
 
 @required
 - (void)sharedInit;
+- (void)loadingAnimation;
 
 @optional
-- (void)showWithAnimated:(BOOL)animated complete:(void (^)(BOOL finish))block;
-- (void)showWithComplete:(void (^)(BOOL finish))block;
+- (void)showLoadingInView:(UIView *)view;
+- (void)hideLoading;
 
 @end
 
 @interface DKAnimationView : UIView<DKAnimationDelegate>
+{
+    CAReplicatorLayer *replicatorLayer;
+    CALayer *dotLayer;
+}
 
-@property (nonatomic, assign) DKAnimationType animationType;
+/**
+ *  圆角矩形的背景色
+ */
+@property (nonatomic, strong) UIColor *layerColor;
+
+/**
+ *  圆点的颜色
+ */
+@property (nonatomic, strong) UIColor *dotColor;
 @end
