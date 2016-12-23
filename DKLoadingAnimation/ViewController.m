@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "DKThreeDotLoadingAnimationView.h"
 #import "DKTenDotCircleLoadingAnimationView.h"
+#import "DKClockLoadingAnimationView.h"
 
 @interface ViewController()
 {
@@ -48,7 +49,8 @@
 
 - (void)initAllData
 {
-    arrayLoadingAnimations = @[@"DKThreeDotLoadingAnimationView", @"DKTenDotCircleLoadingAnimationView"];
+    arrayLoadingAnimations = @[NSStringFromClass([DKThreeDotLoadingAnimationView class]), NSStringFromClass([DKTenDotCircleLoadingAnimationView class]),
+                               NSStringFromClass([DKClockLoadingAnimationView class])];
 }
 
 - (void)initAllControls
@@ -81,12 +83,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Class className = NSClassFromString(arrayLoadingAnimations[indexPath.row]);
-    DKAnimationView *loadingAnimation = [className new];
-//    loadingAnimation.dotColor = [UIColor colorWithRed:arc4random_uniform(256) / 255.f green:arc4random_uniform(256) / 255.f blue:arc4random_uniform(256) / 255.f alpha:1.f];
-    [loadingAnimation showLoadingInView:self.view];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [loadingAnimation hideLoading];
-    });
+    if ([className isSubclassOfClass:[DKAnimationView class]]) {
+        DKAnimationView *loadingAnimation = [className new];
+        //    loadingAnimation.dotColor = [UIColor colorWithRed:arc4random_uniform(256) / 255.f green:arc4random_uniform(256) / 255.f blue:arc4random_uniform(256) / 255.f alpha:1.f];
+        [loadingAnimation showLoadingInView:self.view];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [loadingAnimation hideLoading];
+        });
+    } else if ([className isSubclassOfClass:[DKClockLoadingAnimationView class]]) {
+        DKClockLoadingAnimationView *clockLoadingAnimation = [[DKClockLoadingAnimationView alloc] initWithFrame:self.view.frame];
+        clockLoadingAnimation.hidden = NO;
+        [self.view addSubview:clockLoadingAnimation];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [clockLoadingAnimation removeFromSuperview];
+        });
+    }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

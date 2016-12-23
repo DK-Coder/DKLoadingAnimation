@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD05967C1E02224C00899A29 /* DKClockLoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD05967B1E02224C00899A29 /* DKClockLoadingAnimationView.m */; };
 		BD139ADE1D41ED1100C7E349 /* DKAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD139ADD1D41ED1100C7E349 /* DKAnimationView.m */; };
 		BD139AE11D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD139AE01D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.m */; };
 		BD68453D1D41B82F0040385D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD68453C1D41B82F0040385D /* main.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD05967A1E02224C00899A29 /* DKClockLoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKClockLoadingAnimationView.h; sourceTree = "<group>"; };
+		BD05967B1E02224C00899A29 /* DKClockLoadingAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKClockLoadingAnimationView.m; sourceTree = "<group>"; };
 		BD139ADC1D41ED1100C7E349 /* DKAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKAnimationView.h; sourceTree = "<group>"; };
 		BD139ADD1D41ED1100C7E349 /* DKAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKAnimationView.m; sourceTree = "<group>"; };
 		BD139ADF1D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTenDotCircleLoadingAnimationView.h; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				BD6845571D41B8C10040385D /* DKThreeDotLoadingAnimationView.m */,
 				BD139ADF1D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.h */,
 				BD139AE01D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.m */,
+				BD05967A1E02224C00899A29 /* DKClockLoadingAnimationView.h */,
+				BD05967B1E02224C00899A29 /* DKClockLoadingAnimationView.m */,
 			);
 			path = DKLoadingAnimation;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				BD6845431D41B82F0040385D /* ViewController.m in Sources */,
 				BD139ADE1D41ED1100C7E349 /* DKAnimationView.m in Sources */,
 				BD6845401D41B82F0040385D /* AppDelegate.m in Sources */,
+				BD05967C1E02224C00899A29 /* DKClockLoadingAnimationView.m in Sources */,
 				BD68453D1D41B82F0040385D /* main.m in Sources */,
 				BD139AE11D41F8E100C7E349 /* DKTenDotCircleLoadingAnimationView.m in Sources */,
 			);

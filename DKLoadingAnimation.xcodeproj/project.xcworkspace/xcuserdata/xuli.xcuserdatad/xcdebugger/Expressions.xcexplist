@@ -3,6 +3,20 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[DKClockLoadingAnimationView sharedInit]:DKClockLoadingAnimationView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.center">
+            </PersistentString>
+            <PersistentString
+               value = "self.frame">
+            </PersistentString>
+            <PersistentString
+               value = "self.dk_outerRadius">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[DKTenDotCircleLoadingAnimationView moveingAnimation]:DKTenDotCircleLoadingAnimationView.m">
          <PersistentStrings>
             <PersistentString
@@ -10,6 +24,34 @@
             </PersistentString>
             <PersistentString
                value = "replicatorLayer.position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DKClockLoadingAnimationView layoutSubviews]:DKClockLoadingAnimationView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "layerInitialCircle.frame">
+            </PersistentString>
+            <PersistentString
+               value = "layerInitialCircle.position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DKClockLoadingAnimationView animationDidStop:finished:]:DKClockLoadingAnimationView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "layerHourHand.anchorPoint">
+            </PersistentString>
+            <PersistentString
+               value = "pathCurrentPoint">
+            </PersistentString>
+            <PersistentString
+               value = "((CAAnimationGroup *)anim).animations">
+            </PersistentString>
+            <PersistentString
+               value = "[layerWaterDrop animationForKey:@&quot;waterDropGroupAnimation&quot;]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
